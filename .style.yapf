@@ -1,0 +1,23 @@
+# https://github.com/google/yapf
+
+[style]
+# pep8 or google
+based_on_style = pep8
+
+# Align closing bracket with visual indentation.
+BLANK_LINE_BEFORE_NESTED_CLASS_OR_DEF = true
+
+# The number of spaces required before a trailing comment.
+spaces_before_comment = 4
+
+# Set to True to prefer splitting before and or or rather than after.
+split_before_logical_operator = true
+
+# The number of columns to use for indentation.
+indent_width = 4
+
+# Use the Tab character for indentation.
+USE_TABS = False
+
+# The column limit (or max line-length)
+COLUMN_LIMIT = 120
