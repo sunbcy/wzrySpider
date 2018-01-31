@@ -2,7 +2,7 @@
 
 """
 created by：2018-1-14 11:38:2
-modify by: 2018-1-16 14:37:57
+modify by: 2018-1-31 18:27:47
 
 功能：王者荣耀壁纸下载
 """
@@ -15,7 +15,6 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from bs4 import BeautifulSoup
-
 
 from src.comm.app_config import *
 from src.comm.utils import Utils
@@ -43,8 +42,7 @@ class WzrzWallDL:
             sys.exit(1)
 
         self.logger_handle = LoggingFileHandler.timed_rotating_file_handler(logfile_path,
-                                                                            program_name,
-                                                                            log_encoding="utf-8")
+                            program_name, log_encoding="utf-8")
 
     def wzrz_wall_dl(self):
         # 获得浏览器的session，浏览器用Firefox、Chrome、IE等都可以
@@ -128,4 +126,4 @@ class WzrzWallDL:
 
         # 当执行完抓取操作后，必须关闭session，不然让它一直占内存会影响机器其他进程的运行
         driver.close()
-        print("OK: The program is close!!!")
+        print("OK: 运行完成，程序已经关闭!!!")

@@ -3,7 +3,7 @@
             "program_name": "wzrySpider",
             "url": "http://pvp.qq.com",
             "max_page_number": 12,
-            "download_path": "E://王者荣耀",
+            "download_path": "D://wzrySpiderDownload",
             "logfile_path": "wzrySpider.log",
             "images_resolution": "1920x1080"
         }

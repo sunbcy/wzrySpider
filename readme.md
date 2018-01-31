@@ -1,6 +1,10 @@
-# **Readme**
+# **wzrySpider**
 
 ## **Basic Requirements**
+
+### ***Python versions***
+
+应该安装好Python(v3.4.3或者更高，可以使用Python -V来确认)。
 
 ### ***Install PhantomJS***
 
@@ -16,7 +20,7 @@ PhantomJS安装方法有两种，一种是下载源码之后自己来编译，�
 
 ### ***Install webdriver(可选)***
 
-PhantomJS是一个无头浏览器，没有UI界面，所以我推荐可以再下一个火狐驱动或者谷歌驱动，这样你可以看到页面的跳转等具体是一个什么样子。
+PhantomJS是一个无头浏览器，没有UI界面，所以建议再下一个火狐驱动或者谷歌驱动，这样你可以看到页面的跳转等具体是一个什么样子。
 
 - Firefox的驱动geckodriver 下载地址：
 
@@ -27,6 +31,8 @@ PhantomJS是一个无头浏览器，没有UI界面，所以我推荐可以再下
     <https://sites.google.com/a/chromium.org/chromedriver/downloads>
 
 ### ***Using Python module:***
+
+***方法一：***
 
 - [selenium](www.seleniumhq.org)
 
@@ -39,6 +45,19 @@ PhantomJS是一个无头浏览器，没有UI界面，所以我推荐可以再下
 - [requests](www.python-requests.org)
 
         $ pip install requests
+
+***方法二：***
+
+如果你已经安装好pipenv,那么可以直接在项目下面执行(可选：
+
+    $ pipenv install
+    $ pipenv shell
+
+***方法三：***
+
+项目下有requirements.txt文件，因此可以直接：
+
+    $ pip install -r requirements.txt
 
 ## **Run program**
 
